@@ -35,42 +35,9 @@
         </tr>
         </thead>
         <tbody>
-            <!-- Jquery -->
+            <!-- Jquery Adds Here -->
         </tbody>
     </table>
-
-    <!-- New Card -->
-    <div class="card">
-        <div class="card-header">
-            Add Train
-        </div>
-        <div class="card-body">
-            <h6 class="card-title">Schedule a new train</h6>
-            <p class="card-text">Add a new train schedule to the Arrivals Board with destination. Look for the new *Delete* button coming soon! Use it to remove scheduled trains.</p>
-            <form id="addTrain">
-                <div class="row">
-                    <div class="col">
-                        <input class="form-control" type="text" id="tname" placeholder="Train Name">
-                    </div>
-                    <div class="col">
-                        <input class="form-control" type="text" id="dest" placeholder="Destination">
-                    </div>
-                    <div class="col">
-                        <input class="form-control" type="number" id="freq" placeholder="Frequency (mins)">
-                    </div>
-                    <div class="col">
-                        <input class="form-control" type="time" id="ftt" placeholder="First Train Time (24:00) ">
-                    </div>
-                    <input type="button" class="add-row btn btn-primary" value="Add Train">
-                </div>
-            </form>
-        </div>
-    </div>
-
-     <!-- Delete Train Button -->
-    <div class="row">
-        <button type="button" class="delete-row btn btn-primary">Delete Train</button>
-    </div>
 
     <!-- Add Train Card -->
     <div class="card card-default">
@@ -100,17 +67,44 @@
             <button class="btn btn-primary" id="add-train" type="submit">Add Train</button>
         </form>
     </div>
+</div>
 
-    <!-- Display all trains -->
-    <div class="card card-default">
-        <div class="card-heading">
-            <h3 class="card-title">All Members</h3>
-        </div>
-        <div class="card-body">
-            <div id="train-list"></div>
+<!-- New Card -->
+<div class="container">
+    <div class=row>
+        <div class="card">
+            <div class="card-header">
+                Add Train
+            </div>
+            <div class="card-body">
+                <h6 class="card-title">Schedule a new train</h6>
+                <p class="card-text">Add a new train schedule to the Arrivals Board with destination. Look for the new *Delete* button coming soon! Use it to remove scheduled trains.</p>
+                <form id="addTrain">
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="text" id="tname" placeholder="Train Name">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="text" id="dest" placeholder="Destination">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="number" id="freq" placeholder="Frequency (mins)">
+                        </div>
+                        <div class="col">
+                            <input class="form-control" type="time" id="ftt" placeholder="First Train Time (24:00) ">
+                        </div>
+                        <input type="button" class="add-row btn btn-primary" value="Add Train">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</div> 
+</div>
+    
+<!-- Delete Train Button -->
+<div class="row">
+    <button type="button" class="delete-row btn btn-primary">Delete Train</button>
+</div>
 
 <!-- Add JQuery Script -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
