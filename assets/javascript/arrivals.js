@@ -63,7 +63,7 @@ $(document).ready(function(){
         freQuency = $("#freq-input").val().trim();
         firstTrainTime = $("#ftt-input").val().trim();
         nextTrainTime = nextArrival();
-        console.log("NextTrainTime: "+nextTrainTime);
+        console.log("NextTrainTime: ", nextTrainTime);
     
         // Push values to Firebase
         dataArrivals.ref().push({    
@@ -97,7 +97,7 @@ $(document).ready(function(){
             dest: dest,
             freq: freq,
             firsttrain: ftt,
-            //nexttrain: ntt,
+            nexttrain: ntt,
             dateAdded: firebase.database.ServerValue.TIMESTAMP
         });
     });
@@ -144,7 +144,7 @@ $(document).ready(function(){
         var nextTrain = moment().add(tMinutesTillTrain, "minutes");
         console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
     
-        return nextTrain;
+        return moment(nextTrain).format("hh:mm");
     }
 
 });    
