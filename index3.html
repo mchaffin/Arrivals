@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>ARRIVALS</title>  
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Firebase  -->
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <h1 class="text-center">Train Arrivals</h1>
+</div>
+<!-- New Table  -->
+<table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Train Name</th>
+            <th scope="col">Destination</th>
+            <th scope="col">Frequency (min)</th>
+            <th scope="col">Next Arrival</th>
+            <th scope="col">Minutes Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+
+<!-- New Card -->
+<div class="card">
+    <div class="card-header">
+        Add Train
+    </div>
+    <div class="card-body">
+        <h6 class="card-title">Schedule a new train</h6>
+        <p class="card-text">Add a new train schedule to the Arrivals Board with destination. Look for the new *Delete* button coming soon! Use it to remove scheduled trains.</p>
+       
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+
+    <form id="addTrain">
+        <div class="row">
+            <div class="col">
+                <input class="form-control" type="text" id="tname" placeholder="Train Name">
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" id="dest" placeholder="Destination">
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" id="freq" placeholder="Frequency (mins)">
+            </div>
+            <div class="col">
+                <input class="form-control" type="text" id="ftt" placeholder="First Train Time (24:00) ">
+            </div>
+            <input type="button" class="add-row" value="Add Train">
+        </div>
+        </form>
+
+    <!-- Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>Train Name</th>
+                <th>Destination</th>
+                <th>Frequency(min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <!--JQUERY HERE-->
+            </tr>
+        </tbody>
+    </table>
+<button type="button" class="delete-row">Delete Row</button>
+
+<!--????????s-->
+<div class="row">
+    <!-- Sign-Up Card -->
+    <div class="col-lg-12">
+        <div class="card card-default">
+        <div class="card-heading">
+            <h3 class="card-title">Add New Train</h3>
+        </div>
+        
+        <div class="card-body">
+        <!-- Add New Train Form -->
+            <form role="form">
+                <div class="form-group row">
+                    <label for="name-input">Train name:</label>
+                    <input class="form-control" id="tname-input" type="text">
+                </div>
+                <div class="form-group row">
+                    <label for="email-input">Destination:</label>
+                    <input class="form-control" id="dest-input" type="text">
+                </div>
+                <div class="form-group row">
+                    <label for="comment-input">Frequency (min):</label>
+                    <input class="form-control" id="freq-input" type="number">
+                </div>
+                <div class="form-group row">
+                    <label for="age-input">First Train Time (24:00):</label>
+                    <input class="form-control" id="ftt-input" type="number">
+                </div>
+                <button class="btn btn-default" id="add-user" type="submit">Add Train</button>
+            </form>
+        </div>
+    </div>
+    </div>
+    
+    <!-- Wells for displaying all users -->
+    <div class="col-lg-12">
+        <div class="card card-default">
+            <div class="card-heading">
+                <h3 class="card-title">All Members</h3>
+            </div>
+            <div class="card-body">
+                <div id="full-member-list"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>    
+
+<!-- Add JQuery Script -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Primary Script -->
+<script type="text/javascript" src="assets/javascript/arrivals.js"></script>
+<!-- Intialize App -->
+<!--<script type="text/javascript">game.initGame();</script> -->
+
+</body> 
+</html>                            
